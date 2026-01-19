@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Usage Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="title-section">
+                <h1>Electricity Usage Dashboard</h1>
+                <p>Provincial distribution and sector breakdown analysis</p>
+            </div>
+            <div class="filter-section">
+                <label for="year">Select Year:</label>
+                <select id="year">
+                    <option value="2566">2566</option>
+                </select>
+            </div>
+        </header>
+
+        <div class="metrics-grid">
+            <div class="card metric">
+                <h3>TOTAL CONSUMPTION</h3>
+                <div class="value blue">200,009,357,487 kWh</div>
+            </div>
+            <div class="card metric">
+                <h3>TOTAL ACTIVE USERS</h3>
+                <div class="value purple">26,259,114</div>
+            </div>
+            <div class="card metric">
+                <h3>AVG USAGE PER PROVINCE</h3>
+                <div class="value green">2,597,524,123 kWh</div>
+            </div>
+            <div class="card metric">
+                <h3>TOP PROVINCE</h3>
+                <div class="value orange">Bangkok</div>
+            </div>
+        </div>
+
+        <div class="charts-grid">
+            <div class="card bar-chart">
+                <h3>Electricity Usage by Province (Top 15)</h3>
+                <div class="chart-placeholder">
+                    <img src="https://via.placeholder.com/600x300?text=Bar+Chart+Placeholder" alt="Bar Chart">
+                </div>
+            </div>
+            <div class="card donut-chart">
+                <h3>Usage Sector Breakdown</h3>
+                <div class="chart-placeholder">
+                    <img src="https://via.placeholder.com/300x300?text=Donut+Chart+Placeholder" alt="Donut Chart">
+                </div>
+            </div>
+        </div>
+
+        <div class="card table-section">
+            <div class="table-header">
+                <h3>Provincial Data Breakdown</h3>
+                <input type="text" placeholder="Search province..." id="search">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PROVINCE</th>
+                        <th>TOTAL USERS</th>
+                        <th>CONSUMPTION (KWH)</th>
+                        <th>USAGE PER USER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bangkok</strong></td>
+                        <td>2,990,169</td>
+                        <td>37,520,305,782</td>
+                        <td class="usage-val">12547.89</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Chonburi</strong></td>
+                        <td>860,025</td>
+                        <td>14,819,757,594</td>
+                        <td class="usage-val">16597.22</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rayong</strong></td>
+                        <td>483,808</td>
+                        <td>10,840,807,927</td>
+                        <td class="usage-val">22496.89</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Samut Prakan</strong></td>
+                        <td>598,892</td>
+                        <td>10,165,701,311</td>
+                        <td class="usage-val">16879.95</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
